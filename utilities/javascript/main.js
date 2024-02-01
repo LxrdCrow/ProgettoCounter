@@ -15,28 +15,28 @@ counterDiv.appendChild(counterValue);
 const divButtons = document.createElement("div");
 divButtons.classList.add("buttons");
 counterDiv.appendChild(divButtons);
-console.log(divButtons);
+
 
 // Bottone incremento (+)
 const incrementBtn = document.createElement('button');
 incrementBtn.id = 'increment-btn';
 incrementBtn.textContent = '+';
 divButtons.appendChild(incrementBtn);
-console.log(incrementBtn);
+
 
 // Bottone reset
 const resetBtn = document.createElement('button');
 resetBtn.id = 'reset';
 resetBtn.textContent = 'Reset';
 divButtons.appendChild(resetBtn);
-console.log(resetBtn);
+
 
 // Bottone decremento (-)
 const decrementBtn = document.createElement('button');
 decrementBtn.id = 'decrement-btn';
 decrementBtn.textContent = '-';
 divButtons.appendChild(decrementBtn);
-console.log(decrementBtn);
+
 
 
 // Eventi di incremento, decremento e reset
