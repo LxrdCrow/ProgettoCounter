@@ -1,0 +1,21 @@
+body {
+    background-color: blueviolet;
+}
+
+.counter{
+    height: 200px;
+    width: 400px;
+    padding: 30px;
+    margin: 250px auto;
+    background-color: gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+button{
+    font-size: 15px;
+    color: black;
+    padding: 15px 30px 15px 30px;
+    
+}
