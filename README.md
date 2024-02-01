@@ -1,4 +1,4 @@
-# PRESENTAZIONE PROGETTO DI JAVASCRIPT BASICS DI FEDERICO GRASSO
+# PRESENTAZIONE PROGETTO JAVASCRIPT BASICS DI FEDERICO GRASSO
 
 Ho creato una piccola presentazione con HTML/CSS con l'aggiunta di JavaScript allo scopo di simulare quello che dovrebbe essere il funzionamento del counter.
 
