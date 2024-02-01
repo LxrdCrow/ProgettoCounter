@@ -1,8 +1,8 @@
 let counter = 0;
-const counterValue = document.getElementById();
-const incrementBtn = document.getElementById();
-const decrementBtn = document.getElementById();
-const resetBtn = document();
+const counterValue = document.getElementById('counter-Value');
+const incrementBtn = document.getElementById('increment-btn');
+const decrementBtn = document.getElementById('decrement-btn');
+const resetBtn = document.querySelector('#reset');
 
 
 // Creazione degli elementi HTML
@@ -24,11 +24,31 @@ document.body.appendChild(divProgetto);
 
 
 
-//Creazione counter con la manipolazione del DOM//
+//Creazione counter con la manipolazione del DOM
 
-const newDiv = document.createElement('div');
+const counterDiv = document.createElement('div');
 counterDiv.className = 'counter';
 divProgetto.appendChild(counterDiv);
 
 
+//Valore di incremento
+incrementBtn.addEventListener('click', () => {
+    counter++;
+    counterValue.textContent = counter;
+});
+ 
+//Valore di decremento
+decrementBtn.addEventListener('click', () => {
+    counter--;
+    counterValue.textContent = counter;
+});
+ 
+//Reset per ripartire da zero
+resetBtn.addEventListener('click', reset);
+ 
+function reset() {
+    counter = 0;
+    counterValue.textContent = counter;
+}
 
+//Creazione elementi del CSS
