@@ -1,12 +1,12 @@
-let = 0;
-const counterValue = ;
-const incrementBtn = ;
-const decrementBtn = ;
-const resetBtn = ;
+let counter = 0;
+const counterValue = document.getElementById();
+const incrementBtn = document.getElementById();
+const decrementBtn = document.getElementById();
+const resetBtn = document();
 
 
 // Creazione degli elementi HTML
-const divProgetto = document.createElement('div');
+var newDiv = document.createElement('div');
 divProgetto.className = 'progetto';
 
 
@@ -26,7 +26,7 @@ document.body.appendChild(divProgetto);
 
 //Creazione counter con la manipolazione del DOM//
 
-const counterDiv = document.createElement('div');
+const newDiv = document.createElement('div');
 counterDiv.className = 'counter';
 divProgetto.appendChild(counterDiv);
 
