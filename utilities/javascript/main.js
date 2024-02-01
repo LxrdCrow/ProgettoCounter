@@ -1,31 +1,43 @@
 let counter = 0;
-const counterValue = document.createElement('p');
-counterValue.id = 'counter-Value';
 
-const incrementBtn = document.createElement('button');
-incrementBtn.id = 'increment-btn';
-incrementBtn.textContent = '+';
-
-const decrementBtn = document.createElement('button');
-decrementBtn.id = 'decrement-btn';
-decrementBtn.textContent = '-';
-
-const resetBtn = document.createElement('button');
-resetBtn.id = 'reset';
-resetBtn.textContent = 'Reset';
-
-
-
-// Creazione di un unico div con la classe "counter"
+// Creazione del div del counter
 const counterDiv = document.createElement("div");
 counterDiv.classList.add("counter");
 document.body.appendChild(counterDiv);
 
-// Aggiunta degli elementi al div "counter"
+
+const counterValue = document.createElement('p');
+counterValue.id = 'counter-Value';
 counterDiv.appendChild(counterValue);
-counterDiv.appendChild(incrementBtn);
-counterDiv.appendChild(decrementBtn);
-counterDiv.appendChild(resetBtn);
+
+
+// Creazione del div per i bottoni
+const divButtons = document.createElement("div");
+divButtons.classList.add("buttons");
+counterDiv.appendChild(divButtons);
+console.log(divButtons);
+
+// Bottone incremento (+)
+const incrementBtn = document.createElement('button');
+incrementBtn.id = 'increment-btn';
+incrementBtn.textContent = '+';
+divButtons.appendChild(incrementBtn);
+console.log(incrementBtn);
+
+// Bottone reset
+const resetBtn = document.createElement('button');
+resetBtn.id = 'reset';
+resetBtn.textContent = 'Reset';
+divButtons.appendChild(resetBtn);
+console.log(resetBtn);
+
+// Bottone decremento (-)
+const decrementBtn = document.createElement('button');
+decrementBtn.id = 'decrement-btn';
+decrementBtn.textContent = '-';
+divButtons.appendChild(decrementBtn);
+console.log(decrementBtn);
+
 
 // Eventi di incremento, decremento e reset
 incrementBtn.addEventListener('click', () => {
@@ -44,7 +56,3 @@ function reset() {
     counter = 0;
     counterValue.textContent = counter;
 }
-
-
-
-
