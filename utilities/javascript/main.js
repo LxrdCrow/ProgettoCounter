@@ -56,3 +56,4 @@ function reset() {
     counter = 0;
     counterValue.textContent = counter;
 }
+reset ();
